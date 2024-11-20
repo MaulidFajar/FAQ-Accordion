@@ -65,6 +65,7 @@ body {
 }
 
 .question_wrapper p {
+  color: var(--dark_purple);
   padding-right: 2.627rem;
   font-weight: 600;
 }
@@ -89,8 +90,9 @@ body {
 
 .faq_answer_wrapper .faq_answer {
   color: var(--grayish_purple);
-  font-size: 15px;
-  padding-right: 5px;
+  font-size: 14px;
+  padding-right: 16px;
+  line-height: 1.23rem;
 }
 
 hr {
@@ -101,4 +103,38 @@ hr {
 
 .active {
   display: block;
+  position: relative;
+}
+
+@media screen and (min-width: 575px) {
+  .container {
+    width: 529px;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .faq {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-size: 100%;
+    background-position: top;
+    height: 100vh;
+  }
+
+  .faq_answer_wrapper .faq_answer {
+    color: var(--grayish_purple);
+    font-size: 14px;
+    line-height: 1.23rem;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .container {
+    position: relative;
+    top: -55px;
+  }
 }
